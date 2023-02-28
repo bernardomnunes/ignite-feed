@@ -4,7 +4,7 @@
   padding: 2.5rem;
 }
 
-/* so vai se aplicar para .post que tenham outro post antes dele */
+/* se houver outro .post dps de outro vai se aplicar isso */
 .post + .post {
   margin-top: 2rem;
 }
@@ -29,7 +29,7 @@
   color: var(--green-300);
 }
 
-/* Vai buscar a tag header no primeiro "nivel" dentro do post */
+/* Vai buscar a tag header nos filhos dentro do post */
 .post > header {
   display: flex;
   align-items: center;
@@ -45,14 +45,6 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-.author img {
-  width: calc(3rem + 12px);
-  height: calc(3rem + 12px);
-  border-radius: 8px;
-  border: 4px solid var(--gray-800);
-  outline: 2px solid var(--green-500);
 }
 
 .authorInfo {
