@@ -29,8 +29,8 @@ export function Post({ author, publishedAt, content }) {
   });
 
   function handleCreateNewComment() {
-    // O padrao do html eh ao clicar no publicar ele mandar para outra pagina, cm para mandar para outra pagina, precisa usar a funcao da linha 33;
-    event.preventDefault();
+    // O padrao do html ao dar submit eh mandar para outra pagina, a funcao da linha 33 resolve isso;
+    // event.preventDefault();
 
     setComments([...comments, comments.length + 1]);
     console.log(comments);
