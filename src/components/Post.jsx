@@ -13,7 +13,7 @@ import styles from "./Post.module.css";
 // content : String
 
 export function Post({ author, publishedAt, content }) {
-  const [comments, setComments] = useState([1, 2]);
+  const [comments, setComments] = useState(["Post muito bacana heim!?"]);
 
   const publishedDateFormatted = format(
     publishedAt,
@@ -30,10 +30,9 @@ export function Post({ author, publishedAt, content }) {
 
   function handleCreateNewComment() {
     // O padrao do html ao dar submit eh mandar para outra pagina, a funcao da linha 33 resolve isso;
-    // event.preventDefault();
+    event.preventDefault();
 
     setComments([...comments, comments.length + 1]);
-    console.log(comments);
   }
 
   return (
@@ -83,7 +82,7 @@ export function Post({ author, publishedAt, content }) {
 
       <div className={styles.commentList}>
         {comments.map((comment) => {
-          return <Comment />;
+          return <Comment content={comment} />;
         })}
       </div>
     </article>

@@ -2,6 +2,7 @@
   background: var(--gray-800);
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 1.25rem 0;
   color: #e1e1e6;
   gap: 0.5rem;
@@ -13,6 +14,4 @@
 
 .header strong {
   font-size: 1.4rem;
-  display: flex;
-  align-items: center;
 }

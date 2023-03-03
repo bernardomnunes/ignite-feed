@@ -4,7 +4,7 @@
   padding: 2.5rem;
 }
 
-/* se houver outro .post dps de outro vai se aplicar isso */
+/* se houver outro .post dps de outro vai se aplicar isso (apenas nao se aplica no primeiro post)*/
 .post + .post {
   margin-top: 2rem;
 }
@@ -93,6 +93,7 @@
   max-height: 0;
 }
 
+/* se houver algum foco em qlq elemento dentro do .commentForm */
 .commentForm:focus-within footer {
   visibility: visible;
   max-height: none;
