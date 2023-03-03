@@ -29,7 +29,7 @@
   color: var(--green-300);
 }
 
-/* Vai buscar a tag header nos filhos dentro do post */
+/* Vai buscar a tag header nos primeiros filhos dentro do post */
 .post > header {
   display: flex;
   align-items: center;
