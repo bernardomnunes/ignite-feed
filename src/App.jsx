@@ -1,8 +1,8 @@
 import { Header } from "./components/Header";
 import { Post } from "./components/Post";
+import { Sidebar } from "./components/Sidebar";
 
 import styles from "./App.module.css";
-import { Sidebar } from "./components/Sidebar";
 
 import "./global.css";
 
@@ -56,6 +56,7 @@ export function App() {
           {post.map((post) => {
             return (
               <Post
+                key={post.id}
                 author={post.author}
                 content={post.content}
                 publishedAt={post.publishedAt}
